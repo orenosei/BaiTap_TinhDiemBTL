@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f5f6f8;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 1150px;
+  margin: 48px auto;
+  padding: 24px;
+  background: white;
+  border: 1px solid #dce1e7;
+  border-radius: 8px;
+}
+
+h1 { margin: 0 0 8px; font-size: 28px; }
+p { margin: 0 0 20px; }
+.table-container { overflow-x: auto; margin-bottom: 20px; }
+table { width: 100%; border-collapse: collapse; white-space: nowrap; }
+th, td { padding: 12px; border: 1px solid #dce1e7; text-align: center; }
+th { background: #edf2f7; }
+.name { text-align: left; }
+input { width: 76px; padding: 7px; border: 1px solid #aeb8c4; border-radius: 4px; font: inherit; }
+input:focus { outline: 2px solid #2563eb; outline-offset: 1px; }
+.student-id { width: 100px; }
+.student-name { width: 150px; }
+button { padding: 7px 10px; border: 1px solid #aeb8c4; border-radius: 4px; background: #edf2f7; color: #1f2937; font: inherit; cursor: pointer; }
+button:hover { background: #dfe7f0; }
+button:focus-visible { outline: 2px solid #2563eb; outline-offset: 1px; }
+.delete-button { color: #b91c1c; background: white; }
+.group-actions { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+.result { color: #1d4ed8; font-weight: bold; }
+.group-note td { background: #fafbfc; text-align: left; font-size: 13px; white-space: normal; }
+.error { display: block; margin-top: 4px; color: #b91c1c; }
+.note { margin: 8px 0 0; color: #536171; font-size: 14px; }
+
+@media (max-width: 640px) {
+  main { margin: 16px 8px; padding: 16px; }
+  th, td { padding: 10px 8px; }
+}
